@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Customer Segmentation & Recommendation System
 
 A web application for customer segmentation and personalized recommendations.
@@ -39,3 +40,7 @@ python app.py
 ├── data/                 # Data files
 └── requirements.txt      # Python dependencies
 ``` 
+=======
+# Customer-Segmentation-Recommendation-System
+This project uses transactional data to segment customers via K-Means clustering and generate personalized product recommendations. By identifying purchasing patterns and customer profiles, it improves marketing strategies and boosts sales through targeted suggestions and data-driven insights.
+>>>>>>> 086fa7cc1638cd6b89062a0e9e67c8c36bcf3a90
