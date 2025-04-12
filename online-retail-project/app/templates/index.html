@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Customer Segmentation & Recommendation System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo"><strong>Customer Segmentation</strong> & Recommendation System</a>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</header>
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>Customer Segmentation<br />
+								& Product Recommendations</h1>
+								<p>Advanced Machine Learning System for Retail Analytics</p>
+							</header>
+							<p>This system uses K-Means clustering and collaborative filtering to segment customers and provide personalized product recommendations. Upload your retail data to get started.</p>
+							<ul class="actions">
+								<li><a href="#upload" class="button big">Upload Data</a></li>
+							</ul>
+						</div>
+						<span class="image object">
+							<img src="{{ url_for('static', filename='images/retail-analytics.jpg') }}" alt="Retail Analytics" />
+						</span>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Key Features</h2>
+						</header>
+						<div class="features">
+							<article>
+								<span class="icon fa-gem"></span>
+								<div class="content">
+									<h3>Customer Segmentation</h3>
+									<p>Automatically group customers into meaningful segments based on their purchasing behavior using K-Means clustering.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-paper-plane"></span>
+								<div class="content">
+									<h3>Product Recommendations</h3>
+									<p>Generate personalized product recommendations for each customer segment using collaborative filtering.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-rocket"></span>
+								<div class="content">
+									<h3>Data Analysis</h3>
+									<p>Analyze customer behavior patterns and generate insights to improve business strategies.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-signal"></span>
+								<div class="content">
+									<h3>Visualization</h3>
+									<p>Visualize customer segments and recommendation results through interactive charts and graphs.</p>
+								</div>
+							</article>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section id="upload">
+						<header class="major">
+							<h2>Upload Your Data</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<form method="post" action="/upload" enctype="multipart/form-data">
+									<div class="row gtr-uniform">
+										<div class="col-12">
+											<input type="file" name="file" id="file" accept=".csv" required>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Upload & Process" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+					<!-- Search -->
+					<section id="search" class="alt">
+						<form method="post" action="#">
+							<input type="text" name="query" id="query" placeholder="Search" />
+						</form>
+					</section>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="/">Homepage</a></li>
+							<li><a href="#upload">Upload Data</a></li>
+							<li><a href="#features">Features</a></li>
+							<li>
+								<span class="opener">Customer Segments</span>
+								<ul>
+									<li><a href="#">Segment 1</a></li>
+									<li><a href="#">Segment 2</a></li>
+									<li><a href="#">Segment 3</a></li>
+									<li><a href="#">Segment 4</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Get in touch</h2>
+						</header>
+						<p>Have questions about the system or need assistance? Feel free to reach out to us.</p>
+						<ul class="contact">
+							<li class="icon solid fa-envelope"><a href="#">support@retailanalytics.com</a></li>
+							<li class="icon solid fa-phone">(123) 456-7890</li>
+							<li class="icon solid fa-home">1234 Business Street<br />
+							New York, NY 10001</li>
+						</ul>
+					</section>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Customer Segmentation & Recommendation System. All rights reserved.</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</body>
+</html> 
